@@ -40,6 +40,7 @@ for(x = 0; x < studenti.length; x++) {
   for(var key in persona) {
     console.log(key + ': ' + persona[key]);
   }
+
 }
 
 
@@ -51,7 +52,7 @@ var nuovoStudente = {};
 
 nuovoStudente.nome = prompt('Inserisci nome studente');
 nuovoStudente.cognome = prompt('Inserisci cognome studente');
-nuovoStudente.eta = prompt('Inserisci età studente');
+nuovoStudente.eta = parseInt(prompt('Inserisci età studente'));
 
 studenti.push(nuovoStudente);
 
